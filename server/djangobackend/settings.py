@@ -28,7 +28,9 @@ DEBUG = True
 APPEND_SLASH = True
 
 ALLOWED_HOSTS = ["django-server-space-9.mybluemix.net"]
-
+ALLOWED_HOSTS = [djangoapp-static.us-east.mybluemix.net]
+ALLOWED_HOSTS = [django-server-space-9.mybluemix.net/static]
+ALLOWED_HOSTS = [django-server-space-9.mybluemix.net]
 
 # Application definition
 
