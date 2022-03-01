@@ -1,13 +1,21 @@
-  applications:
-  - name: djangoapp
-    routes:
-      #- route: django-server-space-9.us-south.cf.appdomain.cloud
-      - route: django-server-space-9.mybluemix.net
-    memory: 128M
-    buildpack: python_buildpack
-  - name: djangoapp-nginx
-    routes:
-      #- route: django-server-space-9.us-south.cf.appdomain.cloud/static
-      - route: django-server-space-9.mybluemix.net/static
-    memory: 128M
-    buildpack: staticfile_buildpack
+ applications: 
+
+  - name: djangoapp 
+
+    routes: 
+
+      - route: djangoapp-cc.eu-gb.cf.appdomain.cloud 
+
+    memory: 128M 
+
+    buildpack: python_buildpack 
+
+  - name: djangoapp-nginx 
+
+    routes: 
+
+      - route: djangoapp-cc-static.eu-gb.cf.appdomain.cloud/static 
+
+    memory: 128M 
+
+    buildpack: staticfile_buildpack 
