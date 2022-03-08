@@ -27,11 +27,8 @@ DEBUG = True
 
 APPEND_SLASH = True
 
-#ALLOWED_HOSTS = ["*"]
-#ALLOWED_HOSTS = ["djangoapp-cc.eu-gb.mybluemix.net"]
-#ALLOWED_HOSTS = ["djangoapp-cc-static.eu-gb.mybluemix.net"]
-ALLOWED_HOSTS = ["localhost","djangoapp-cc.eu-gb.cf.appdomain.cloud"]
-ALLOWED_HOSTS = ["localhost","djangoapp-cc-static.eu-gb.cf.appdomain.cloud/static"]
+ALLOWED_HOSTS = ["localhost","djangoapp10.eu-gb.mybluemix.net", "djangoapp10static.eu-gb.mybluemix.net"]
+
 
 # Application definition
 
@@ -60,7 +57,7 @@ ROOT_URLCONF = 'djangobackend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
