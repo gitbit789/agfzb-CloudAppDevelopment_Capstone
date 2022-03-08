@@ -5,7 +5,8 @@ applications:
 
     routes: 
 
-      - route: djangoapp-cc.eu-gb.cf.appdomain.cloud 
+       - route: djangoapp-cc.eu-gb.cf.appdomain.cloud
+       #- route: djangoapp-cc.eu-gb.mybluemix.net 
 
     memory: 128M 
 
@@ -16,6 +17,7 @@ applications:
     routes: 
 
       - route: djangoapp-cc-static.eu-gb.cf.appdomain.cloud/static
+      #- route: djangoapp-cc.eu-gb.mybluemix.net/static
  
 
     memory: 128M 

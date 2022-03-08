@@ -27,10 +27,11 @@ DEBUG = True
 
 APPEND_SLASH = True
 
+#ALLOWED_HOSTS = ["*"]
 #ALLOWED_HOSTS = ["djangoapp-cc.eu-gb.mybluemix.net"]
 #ALLOWED_HOSTS = ["djangoapp-cc-static.eu-gb.mybluemix.net"]
-ALLOWED_HOSTS = ["djangoapp-cc.eu-gb.cf.appdomain.cloud"]
-ALLOWED_HOSTS = ["djangoapp-cc-static.eu-gb.cf.appdomain.cloud/static"]
+ALLOWED_HOSTS = ["localhost","djangoapp-cc.eu-gb.cf.appdomain.cloud"]
+ALLOWED_HOSTS = ["localhost","djangoapp-cc-static.eu-gb.cf.appdomain.cloud/static"]
 
 # Application definition
 
